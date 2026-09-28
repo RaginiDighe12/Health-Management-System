@@ -1,7 +1,7 @@
 
 import { useEffect, useState } from "react";
 import { NavLink, useNavigate } from "react-router-dom";
-import "./Sidebar.css";
+import "./SideBar.css";
 
 function Sidebar() {
     const [isOpen, setIsOpen] = useState(false);
