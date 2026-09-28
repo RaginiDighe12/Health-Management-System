@@ -1,0 +1,432 @@
+.doctor-details-page {
+    width: 90%;
+    max-width: 1200px;
+    margin: 40px auto 80px;
+}
+
+
+/* Back Button */
+
+.back-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+
+    text-decoration: none;
+    color: #2563eb;
+
+    font-size: 15px;
+    font-weight: 600;
+
+    margin-bottom: 25px;
+}
+
+.back-link:hover {
+    color: #1d4ed8;
+}
+
+
+/* Main Profile Card */
+
+.doctor-profile-card {
+    display: flex;
+    align-items: center;
+
+    gap: 35px;
+
+    background: white;
+
+    padding: 35px;
+
+    border-radius: 18px;
+
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.08);
+
+    border: 1px solid #e5e7eb;
+}
+
+
+/* Doctor Image */
+
+.doctor-profile-image {
+    width: 190px;
+    height: 190px;
+
+    flex-shrink: 0;
+
+    border-radius: 18px;
+
+    background: #eff6ff;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.doctor-profile-avatar {
+    width: 120px;
+    height: 120px;
+
+    border-radius: 50%;
+
+    background: #2563eb;
+
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 32px;
+    font-weight: 700;
+}
+
+
+/* Main Information */
+
+.doctor-profile-main {
+    flex: 1;
+}
+
+
+.doctor-title-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    margin-bottom: 25px;
+}
+
+
+.doctor-title-row h1 {
+    margin: 0 0 8px;
+
+    font-size: 32px;
+
+    color: #111827;
+}
+
+
+.doctor-title-row h3 {
+    margin: 0;
+
+    font-size: 18px;
+
+    font-weight: 500;
+
+    color: #2563eb;
+}
+
+
+/* Rating */
+
+.profile-rating {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+    background: #fff7ed;
+
+    color: #ea580c;
+
+    padding: 8px 13px;
+
+    border-radius: 8px;
+
+    font-weight: 700;
+}
+
+
+/* Profile Details */
+
+.profile-details-list {
+    display: flex;
+    flex-direction: column;
+
+    gap: 14px;
+}
+
+
+.profile-detail {
+    display: flex;
+    align-items: center;
+
+    gap: 12px;
+
+    color: #4b5563;
+
+    font-size: 15px;
+}
+
+
+.profile-detail svg {
+    color: #2563eb;
+}
+
+
+/* Information Section */
+
+.doctor-information {
+    margin-top: 30px;
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 20px;
+}
+
+
+/* Information Box */
+
+.doctor-info-box {
+    display: flex;
+
+    gap: 18px;
+
+    background: white;
+
+    padding: 25px;
+
+    border-radius: 15px;
+
+    border: 1px solid #e5e7eb;
+
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.05);
+}
+
+
+.info-icon {
+    width: 45px;
+    height: 45px;
+
+    flex-shrink: 0;
+
+    border-radius: 10px;
+
+    background: #eff6ff;
+
+    color: #2563eb;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.doctor-info-box h2 {
+    margin: 0 0 8px;
+
+    font-size: 18px;
+
+    color: #111827;
+}
+
+
+.doctor-info-box p {
+    margin: 0;
+
+    color: #6b7280;
+
+    line-height: 1.6;
+
+    font-size: 15px;
+}
+
+
+.consultation-fee {
+    font-size: 20px !important;
+
+    font-weight: 700;
+
+    color: #16a34a !important;
+}
+
+
+/* Booking Section */
+
+.booking-section {
+    margin-top: 30px;
+
+    padding: 28px 30px;
+
+    border-radius: 15px;
+
+    background: #eff6ff;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 20px;
+}
+
+
+.booking-section h2 {
+    margin: 0 0 8px;
+
+    color: #111827;
+
+    font-size: 22px;
+}
+
+
+.booking-section p {
+    margin: 0;
+
+    color: #4b5563;
+
+    font-size: 15px;
+}
+
+
+/* Book Button */
+
+.book-appointment-btn {
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 8px;
+
+    padding: 13px 22px;
+
+    background: #2563eb;
+
+    color: white;
+
+    text-decoration: none;
+
+    border-radius: 9px;
+
+    font-weight: 600;
+
+    white-space: nowrap;
+
+    transition: 0.2s;
+}
+
+
+.book-appointment-btn:hover {
+    background: #1d4ed8;
+
+    transform: translateY(-1px);
+}
+
+
+/* Loading */
+
+.doctor-details-loading {
+    min-height: 500px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    color: #2563eb;
+}
+
+
+/* Error */
+
+.doctor-details-error {
+    min-height: 500px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+}
+
+
+.doctor-details-error h1 {
+    color: #111827;
+}
+
+
+.doctor-details-error p {
+    color: #6b7280;
+
+    margin-bottom: 20px;
+}
+
+
+.back-doctors-btn {
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    padding: 12px 20px;
+
+    background: #2563eb;
+
+    color: white;
+
+    text-decoration: none;
+
+    border-radius: 8px;
+
+    font-weight: 600;
+}
+
+
+/* Responsive */
+
+@media (max-width: 768px) {
+
+    .doctor-details-page {
+        width: 94%;
+    }
+
+
+    .doctor-profile-card {
+        flex-direction: column;
+
+        text-align: center;
+    }
+
+
+    .doctor-title-row {
+        flex-direction: column;
+
+        align-items: center;
+
+        gap: 15px;
+    }
+
+
+    .profile-details-list {
+        align-items: center;
+    }
+
+
+    .doctor-information {
+        grid-template-columns: 1fr;
+    }
+
+
+    .booking-section {
+        flex-direction: column;
+
+        text-align: center;
+    }
+
+
+    .book-appointment-btn {
+        width: 100%;
+    }
+}

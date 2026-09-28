@@ -1,0 +1,362 @@
+/* =========================================
+   COMMON APPOINTMENT CARD
+========================================= */
+
+.common-appointment-card {
+    width: 100%;
+
+    background: #ffffff;
+
+    border: 1px solid #e4e7ec;
+
+    border-radius: 14px;
+
+    padding: 20px;
+
+    box-sizing: border-box;
+
+    box-shadow: 0 4px 14px rgba(23, 63, 95, 0.07);
+
+    transition: all 0.25s ease;
+}
+
+
+.common-appointment-card:hover {
+    transform: translateY(-2px);
+
+    box-shadow: 0 8px 22px rgba(23, 63, 95, 0.11);
+}
+
+
+/* =========================================
+   TOP SECTION
+========================================= */
+
+.appointment-card-top {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 15px;
+
+    padding-bottom: 18px;
+
+    border-bottom: 1px solid #edf0f2;
+}
+
+
+.appointment-person {
+    display: flex;
+
+    align-items: center;
+
+    gap: 13px;
+
+    min-width: 0;
+}
+
+
+.appointment-person-avatar {
+    width: 48px;
+    height: 48px;
+
+    flex-shrink: 0;
+
+    border-radius: 50%;
+
+    background: #eaf3f8;
+
+    color: #173f5f;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    font-size: 15px;
+
+    font-weight: 700;
+}
+
+
+.appointment-person h3 {
+    margin: 0;
+
+    color: #173f5f;
+
+    font-size: 16px;
+
+    font-weight: 700;
+}
+
+
+.appointment-person p {
+    margin: 4px 0 0;
+
+    color: #667085;
+
+    font-size: 13px;
+}
+
+
+/* =========================================
+   STATUS
+========================================= */
+
+.common-appointment-status {
+    padding: 6px 12px;
+
+    border-radius: 20px;
+
+    font-size: 12px;
+
+    font-weight: 600;
+
+    white-space: nowrap;
+}
+
+
+.common-appointment-status.pending {
+    background: #fff4d6;
+
+    color: #9a6700;
+}
+
+
+.common-appointment-status.confirmed {
+    background: #e7f6ec;
+
+    color: #198754;
+}
+
+
+.common-appointment-status.rejected {
+    background: #fdecec;
+
+    color: #dc3545;
+}
+
+
+/* =========================================
+   DETAILS
+========================================= */
+
+.appointment-card-details {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 15px;
+
+    padding: 20px 0;
+}
+
+
+.appointment-detail {
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    min-width: 0;
+}
+
+
+.appointment-detail svg {
+    flex-shrink: 0;
+
+    color: #173f5f;
+}
+
+
+.appointment-detail div {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 3px;
+
+    min-width: 0;
+}
+
+
+.appointment-detail small {
+    color: #98a2b3;
+
+    font-size: 11px;
+}
+
+
+.appointment-detail strong {
+    color: #344054;
+
+    font-size: 13px;
+
+    white-space: nowrap;
+
+    overflow: hidden;
+
+    text-overflow: ellipsis;
+}
+
+
+/* =========================================
+   ACTION BUTTONS
+========================================= */
+
+.common-appointment-actions {
+    display: flex;
+
+    justify-content: flex-end;
+
+    align-items: center;
+
+    gap: 9px;
+
+    padding-top: 15px;
+
+    border-top: 1px solid #edf0f2;
+}
+
+
+/* Common Button */
+
+.appointment-btn {
+    min-height: 40px;
+
+    padding: 0 16px;
+
+    border-radius: 7px;
+
+    font-family: inherit;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: all 0.25s ease;
+}
+
+
+/* View */
+
+.appointment-view-btn {
+    background: #ffffff;
+
+    color: #173f5f;
+
+    border: 1px solid #173f5f;
+}
+
+
+.appointment-view-btn:hover {
+    background: #173f5f;
+
+    color: #ffffff;
+}
+
+
+/* Accept */
+
+.appointment-accept-btn {
+    background: #198754;
+
+    color: #ffffff;
+
+    border: 1px solid #198754;
+}
+
+
+.appointment-accept-btn:hover {
+    background: #157347;
+
+    border-color: #157347;
+
+    transform: translateY(-1px);
+}
+
+
+/* Reject */
+
+.appointment-reject-btn,
+.appointment-cancel-btn {
+    background: #dc3545;
+
+    color: #ffffff;
+
+    border: 1px solid #dc3545;
+}
+
+
+.appointment-reject-btn:hover,
+.appointment-cancel-btn:hover {
+    background: #bb2d3b;
+
+    border-color: #bb2d3b;
+
+    transform: translateY(-1px);
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 768px) {
+
+    .appointment-card-details {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .common-appointment-actions {
+        justify-content: flex-start;
+
+        flex-wrap: wrap;
+    }
+
+}
+
+
+@media (max-width: 520px) {
+
+    .common-appointment-card {
+        padding: 16px;
+    }
+
+
+    .appointment-card-top {
+        align-items: flex-start;
+
+        flex-direction: column;
+    }
+
+
+    .common-appointment-status {
+        align-self: flex-start;
+    }
+
+
+    .appointment-card-details {
+        grid-template-columns: 1fr;
+
+        gap: 13px;
+    }
+
+
+    .common-appointment-actions {
+        flex-direction: column;
+
+        align-items: stretch;
+    }
+
+
+    .appointment-btn {
+        width: 100%;
+    }
+
+}   

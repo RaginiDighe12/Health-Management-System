@@ -1,0 +1,178 @@
+.hero {
+    min-height: 600px;
+    padding: 80px 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #eef8ff;
+}
+
+.hero-content {
+    max-width: 600px;
+}
+
+.hero-tag {
+    color: #1677c8;
+    font-weight: 600;
+}
+
+.hero h1 {
+    font-size: 52px;
+    line-height: 1.15;
+    margin: 20px 0;
+}
+
+.hero h1 span {
+    color: #1677c8;
+}
+
+.hero p {
+    color: #666;
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+.hero-buttons {
+    margin-top: 30px;
+    display: flex;
+    gap: 15px;
+}
+
+.primary-btn,
+.secondary-btn {
+    padding: 13px 25px;
+    border-radius: 7px;
+    text-decoration: none;
+}
+
+.primary-btn {
+    background: #1677c8;
+    color: white;
+}
+
+.secondary-btn {
+    border: 1px solid #1677c8;
+    color: #1677c8;
+}
+
+.hero-card {
+    width: 350px;
+    padding: 50px 30px;
+    background: white;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, .1);
+}
+
+.hero-card svg {
+    color: #1677c8;
+}
+
+.search-section {
+    padding: 60px 8%;
+    text-align: center;
+}
+
+.search-box {
+    max-width: 700px;
+    margin: 25px auto;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+.search-box input {
+    flex: 1;
+    border: none;
+    outline: none;
+    padding: 12px;
+}
+
+.search-box button {
+    border: none;
+    padding: 12px 25px;
+    border-radius: 7px;
+    background: #1677c8;
+    color: white;
+}
+
+.services,
+.how-section {
+    padding: 70px 8%;
+    text-align: center;
+}
+
+.section-subtitle {
+    color: #777;
+}
+
+.service-grid {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+.service-card {
+    padding: 35px 20px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, .08);
+}
+
+.service-card svg {
+    color: #1677c8;
+}
+
+.service-card p {
+    color: #666;
+}
+
+.steps {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.steps span {
+    font-size: 30px;
+    font-weight: bold;
+    color: #1677c8;
+}
+
+.steps p {
+    color: #666;
+}
+
+.cta {
+    padding: 70px 20px;
+    text-align: center;
+    background: #1677c8;
+    color: white;
+}
+
+.cta a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 25px;
+    background: white;
+    color: #1677c8;
+    text-decoration: none;
+    border-radius: 7px;
+}
+
+@media (max-width: 900px) {
+    .hero {
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .service-grid,
+    .steps {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

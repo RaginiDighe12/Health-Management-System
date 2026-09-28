@@ -1,0 +1,445 @@
+.patient-profile-page {
+    min-height: 100vh;
+    background: #f5f8fc;
+    padding: 40px 7%;
+}
+
+
+/* Header */
+
+.profile-header {
+    max-width: 1100px;
+    margin: auto;
+}
+
+.back-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+
+    color: #2563eb;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.profile-title {
+    margin-top: 25px;
+}
+
+.profile-title h1 {
+    margin: 0 0 8px;
+
+    font-size: 34px;
+    color: #172b4d;
+}
+
+.profile-title p {
+    margin: 0;
+    color: #667085;
+}
+
+
+/* Success Message */
+
+.profile-success {
+    max-width: 1100px;
+    margin: 25px auto 0;
+
+    padding: 13px 18px;
+
+    background: #ecfdf3;
+    color: #15803d;
+
+    border: 1px solid #bbf7d0;
+
+    border-radius: 9px;
+
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    font-weight: 600;
+}
+
+
+/* Main Container */
+
+.profile-container {
+    max-width: 1100px;
+
+    margin: 30px auto;
+
+    display: grid;
+
+    grid-template-columns: 1fr 300px;
+
+    gap: 25px;
+
+    align-items: start;
+}
+
+
+/* Profile Card */
+
+.profile-card {
+    background: white;
+
+    border-radius: 18px;
+
+    padding: 30px;
+
+    box-shadow: 0 7px 25px rgba(0, 0, 0, 0.07);
+}
+
+
+/* Profile Top */
+
+.profile-top {
+    display: flex;
+    align-items: center;
+
+    gap: 18px;
+
+    padding-bottom: 25px;
+
+    border-bottom: 1px solid #eaecf0;
+}
+
+.profile-avatar {
+    width: 85px;
+    height: 85px;
+
+    border-radius: 50%;
+
+    background: #e8f1ff;
+    color: #2563eb;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.profile-top h2 {
+    margin: 0 0 6px;
+
+    color: #172b4d;
+}
+
+.profile-top p {
+    margin: 0;
+
+    color: #667085;
+}
+
+
+/* Details */
+
+.profile-details {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 22px;
+
+    padding-top: 25px;
+}
+
+.profile-field {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.profile-field.full-width {
+    grid-column: 1 / -1;
+}
+
+.profile-field label {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+
+    color: #344054;
+
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.profile-field label svg {
+    color: #2563eb;
+}
+
+.profile-field p {
+    margin: 0;
+
+    color: #667085;
+
+    padding: 12px 14px;
+
+    background: #f8fafc;
+
+    border-radius: 8px;
+
+    min-height: 20px;
+}
+
+.profile-field input,
+.profile-field select,
+.profile-field textarea {
+    width: 100%;
+
+    box-sizing: border-box;
+
+    padding: 12px 14px;
+
+    border: 1px solid #d0d5dd;
+
+    border-radius: 8px;
+
+    font-size: 15px;
+
+    outline: none;
+
+    font-family: inherit;
+}
+
+.profile-field input:focus,
+.profile-field select:focus,
+.profile-field textarea:focus {
+    border-color: #2563eb;
+
+    box-shadow:
+        0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+.profile-field textarea {
+    resize: vertical;
+}
+
+
+/* Buttons */
+
+.profile-actions {
+    margin-top: 28px;
+
+    display: flex;
+    justify-content: flex-end;
+}
+
+.edit-profile-btn,
+.save-profile-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 8px;
+
+    padding: 12px 20px;
+
+    border-radius: 9px;
+
+    border: none;
+
+    color: white;
+
+    background: #2563eb;
+
+    font-size: 15px;
+    font-weight: 600;
+
+    cursor: pointer;
+}
+
+.edit-profile-btn:hover,
+.save-profile-btn:hover {
+    background: #1d4ed8;
+}
+
+
+/* Side Cards */
+
+.profile-side {
+    display: flex;
+    flex-direction: column;
+
+    gap: 20px;
+}
+
+.profile-side-card {
+    background: white;
+
+    padding: 24px;
+
+    border-radius: 16px;
+
+    box-shadow:
+        0 7px 25px rgba(0, 0, 0, 0.06);
+}
+
+.profile-side-card h2 {
+    margin: 0 0 18px;
+
+    color: #172b4d;
+
+    font-size: 19px;
+}
+
+
+/* Quick Links */
+
+.profile-side-card > a {
+    display: block;
+
+    padding: 12px 0;
+
+    color: #475467;
+
+    text-decoration: none;
+
+    border-bottom: 1px solid #eaecf0;
+
+    font-size: 14px;
+}
+
+.profile-side-card > a:last-child {
+    border-bottom: none;
+}
+
+.profile-side-card > a:hover {
+    color: #2563eb;
+}
+
+
+/* Account Information */
+
+.account-item {
+    display: flex;
+
+    justify-content: space-between;
+
+    gap: 10px;
+
+    padding: 13px 0;
+
+    border-bottom: 1px solid #eaecf0;
+}
+
+.account-item:last-child {
+    border-bottom: none;
+}
+
+.account-item span {
+    color: #667085;
+
+    font-size: 14px;
+}
+
+.account-item strong {
+    color: #344054;
+
+    font-size: 14px;
+}
+
+.account-item .active-status {
+    color: #16a34a;
+}
+
+
+/* Responsive */
+
+@media (max-width: 850px) {
+
+    .patient-profile-page {
+        padding: 30px 5%;
+    }
+
+    .profile-container {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .profile-details {
+        grid-template-columns: 1fr;
+    }
+
+    .profile-field.full-width {
+        grid-column: auto;
+    }
+
+    .profile-card {
+        padding: 22px;
+    }
+
+    .profile-title h1 {
+        font-size: 28px;
+    }
+
+    .profile-actions {
+        justify-content: stretch;
+    }
+
+    .edit-profile-btn,
+    .save-profile-btn {
+        width: 100%;
+    }
+
+}
+/* =========================================
+   PATIENT PROFILE + SIDEBAR LAYOUT
+========================================= */
+
+.patient-profile-layout {
+    min-height: 100vh;
+    display: flex;
+    background: #f5f8fc;
+}
+
+.patient-profile-main {
+    flex: 1;
+    min-width: 0;
+    margin-left: 250px;
+}
+
+.patient-profile-page {
+    min-height: 100vh;
+    padding: 30px 40px 50px;
+}
+
+.profile-loading {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    color: #2563eb;
+}
+
+.profile-error {
+    background: #fee2e2;
+    color: #b91c1c;
+    padding: 14px 18px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 900px) {
+
+    .patient-profile-main {
+        margin-left: 0;
+    }
+
+    .patient-profile-page {
+        padding: 25px 20px;
+    }
+}

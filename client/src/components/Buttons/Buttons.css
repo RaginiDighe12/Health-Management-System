@@ -1,0 +1,176 @@
+
+/* =================================
+   COMMON BUTTON
+================================= */
+
+.common-btn {
+    min-height: 42px;
+
+    padding: 0 20px;
+
+    border: none;
+    border-radius: 8px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 8px;
+
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: all 0.25s ease;
+
+    box-sizing: border-box;
+}
+
+
+/* =================================
+   PRIMARY
+   Main actions
+================================= */
+
+.common-btn-primary {
+    background: #173f5f;
+    color: #ffffff;
+}
+
+.common-btn-primary:hover {
+    background: #2c6289;
+    transform: translateY(-1px);
+    box-shadow: 0 5px 12px rgba(23, 63, 95, 0.18);
+}
+
+
+/* =================================
+   SECONDARY
+================================= */
+
+.common-btn-secondary {
+    background: #eaf3f8;
+    color: #173f5f;
+}
+
+.common-btn-secondary:hover {
+    background: #dcecf5;
+}
+
+
+/* =================================
+   SUCCESS
+   Accept / Confirm
+================================= */
+
+.common-btn-success {
+    background: #198754;
+    color: #ffffff;
+}
+
+.common-btn-success:hover {
+    background: #157347;
+    transform: translateY(-1px);
+    box-shadow: 0 5px 12px rgba(25, 135, 84, 0.18);
+}
+
+
+/* =================================
+   DANGER
+   Delete / Reject
+================================= */
+
+.common-btn-danger {
+    background: #dc3545;
+    color: #ffffff;
+}
+
+.common-btn-danger:hover {
+    background: #bb2d3b;
+    transform: translateY(-1px);
+    box-shadow: 0 5px 12px rgba(220, 53, 69, 0.18);
+}
+
+
+/* =================================
+   OUTLINE
+================================= */
+
+.common-btn-outline {
+    background: #ffffff;
+    color: #173f5f;
+
+    border: 1px solid #173f5f;
+}
+
+.common-btn-outline:hover {
+    background: #173f5f;
+    color: #ffffff;
+}
+
+
+/* =================================
+   LIGHT
+================================= */
+
+.common-btn-light {
+    background: #f4f7f9;
+    color: #344054;
+
+    border: 1px solid #e1e6ea;
+}
+
+.common-btn-light:hover {
+    background: #e8eef2;
+}
+
+
+/* =================================
+   DISABLED
+================================= */
+
+.common-btn:disabled {
+    opacity: 0.55;
+    cursor: not-allowed;
+    transform: none;
+    box-shadow: none;
+}
+
+
+/* =================================
+   SMALL BUTTON
+================================= */
+
+.common-btn-small {
+    min-height: 36px;
+    padding: 0 14px;
+    font-size: 13px;
+}
+
+
+/* =================================
+   LARGE BUTTON
+================================= */
+
+.common-btn-large {
+    min-height: 48px;
+    padding: 0 26px;
+    font-size: 15px;
+}
+
+
+/* =================================
+   MOBILE
+================================= */
+
+@media (max-width: 480px) {
+
+    .common-btn {
+        min-height: 40px;
+        padding: 0 16px;
+        font-size: 13px;
+    }
+
+}
